@@ -22,7 +22,6 @@ supports "ubuntu", ">= 14.04"
 
 depends "apt"
 depends "locale"
-depends 'timezone_lwrp'
 depends "clamav"
 depends "openssl"
 depends "mysqld"

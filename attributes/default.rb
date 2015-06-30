@@ -8,7 +8,6 @@
 #
 
 default["posty"]["company_name"]            = "Aditya"
-default["tz"]                               = "Asia/Kolkata"
 default["posty"]["mail"]["master_user"]     = false # if you set this value to a string e.g. "posty" the master user functionality will be activated and the masterusername is set to "posty". A secure_random password will be generated and written to /etc/dovecot/master-users
 
 default["posty"]["d-push"]["install"]             = true

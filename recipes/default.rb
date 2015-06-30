@@ -14,7 +14,6 @@ if node['mysqld']['root_password'].to_s.empty?
 end
 
 include_recipe "apt"
-include_recipe "timezone_lwrp"
 include_recipe "locale"
 include_recipe "mysqld"
 
