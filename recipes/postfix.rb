@@ -35,7 +35,6 @@ Chef::Log.info("[Configure postfix]")
     owner "root"
     group "root"
     mode "0644"
-    variables(:certificate_name => node["posty"]["certificate_name"])
     notifies :restart, "service[dovecot]"
     notifies :restart, "service[postfix]"
   end

@@ -85,7 +85,7 @@ end
     owner "root"
     group "root"
     mode "0644"
-    variables(:master_user => node["posty"]["mail"]["master_user"], :cpu_cores => node["cpu"]["total"], :certificate_name => node["posty"]["certificate_name"])
+    variables(:master_user => node["posty"]["mail"]["master_user"], :cpu_cores => node["cpu"]["total"])
     notifies :restart, "service[dovecot]"
     notifies :restart, "service[postfix]"
   end

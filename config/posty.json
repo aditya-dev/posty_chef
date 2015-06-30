@@ -1,13 +1,13 @@
 {
   "mysql": {
-    "server_root_password": "SETYOURPASSWORDHERE"
+    "server_root_password": "varma123"
   },
   "posty": {
     "db": {
-      "dbpass": "SETYOURPASSWORDHERE"
+      "dbpass": "varma123"
     },
     "roundcube": {
-      "dbpass": "SETYOURPASSWORDHERE"
+      "dbpass": "varma123"
     }
   },
   "run_list": [

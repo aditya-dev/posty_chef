@@ -27,9 +27,8 @@ include_recipe "posty::automx"
 include_recipe "posty::amavis"
 include_recipe "posty::spamassassin"
 include_recipe "clamav"
-include_recipe "posty::postgrey"
 
-include_recipe "posty::spamhaus" if node["posty"]["spamhaus_blacklist"]["install"]
+
 
 include_recipe "posty::d-push" if node["posty"]["d-push"]["install"]
 include_recipe "posty::roundcube" if node["posty"]["roundcube"]["install"]
