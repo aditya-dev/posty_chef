@@ -51,7 +51,7 @@ default["posty"]["api"]["rack_env"] = "production"
 
 default["posty"]["api"]["host"]     = "example.com"
 default["posty"]["api"]["webpath"]  = "posty_api"
-default["posty"]["webui"]["apiurl"] = "https://#{default["posty"]["api"]["host"]}/#{default["posty"]["api"]["webpath"]}/api/v1"
+default["posty"]["webui"]["apiurl"] = "http://#{default["posty"]["api"]["host"]}/#{default["posty"]["api"]["webpath"]}/api/v1"
 
 default["posty"]["webui"]["github"]   = "https://github.com/aditya-dev/posty_webui"
 default["posty"]["webui"]["revision"] = "master"
