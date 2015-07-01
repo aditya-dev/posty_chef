@@ -81,6 +81,12 @@ execute "enable-apache2-sites" do
   command "a2ensite default-ssl.conf"
   notifies :restart, "service[apache2]"
 end
+
+execute "enable-apache2--default-sites" do
+  command "a2ensite 000-default.conf"
+  notifies :restart, "service[apache2]"
+end
+
 template "/etc/apache2/ports.conf" do
   source "apache/ports.conf"
   owner "root"

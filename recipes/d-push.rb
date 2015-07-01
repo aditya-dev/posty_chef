@@ -27,6 +27,10 @@ execute "enable-dpush-conf" do
   notifies :restart, "service[apache2]"
 end
 
+execute "d-push directory creation" do
+  command "mkdir -p /etc/d-push/"
+end
+
 template "/etc/d-push/config.php" do
   source "d-push/config.php"
   owner "root"
