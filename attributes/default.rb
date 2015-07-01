@@ -49,7 +49,7 @@ default["posty"]["api"]["user"]     = "root"
 default["posty"]["api"]["group"]    = "www-data"
 default["posty"]["api"]["rack_env"] = "production"
 
-default["posty"]["api"]["host"]     = node["hostname"]
+default["posty"]["api"]["host"]     = "example.com"
 default["posty"]["api"]["webpath"]  = "posty_api"
 default["posty"]["webui"]["apiurl"] = "https://#{default["posty"]["api"]["host"]}/#{default["posty"]["api"]["webpath"]}/api/v1"
 
