@@ -61,7 +61,7 @@ default["posty"]["webui"]["group"]    = "www-data"
 default["posty"]["webui"]["htaccess_user"]    = "track"
 default["posty"]["webui"]["htaccess_pass"]    = "aditya963"
 
-default["posty"]["client"]["apiurl"]     = "https://#{default["posty"]["api"]["host"]}/#{default["posty"]["api"]["webpath"]}/api/v1"
+default["posty"]["client"]["apiurl"]     = "http://#{default["posty"]["api"]["host"]}/#{default["posty"]["api"]["webpath"]}/api/v1"
 default["posty"]["client"]["user"]       = "root"
 default["posty"]["client"]["group"]      = "root"
 default["posty"]["client"]["configpath"] = "/root/.posty_client.yml"
