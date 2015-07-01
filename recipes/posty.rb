@@ -86,10 +86,10 @@ template "/etc/apache2/sites-available/000-default.conf" do
   variables(:server => node["posty"]["mail"]["hostname"])
 end
 
-execute "enable-apache2-sites" do
-  command "a2ensite default-ssl.conf"
-  notifies :restart, "service[apache2]"
-end
+# execute "enable-apache2-sites" do
+#   command "a2ensite default-ssl.conf"
+#   notifies :restart, "service[apache2]"
+# end
 
 execute "enable-apache2--default-sites" do
   command "a2ensite 000-default.conf"
